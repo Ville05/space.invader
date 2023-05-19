@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "DxuHwiKGrK3MCZM19/QDHieimIpOtEVeirxbbJwwZ/cS9RFGhgYMbFJTD4/JOqJKKxmQ/XZnly/eZ4PBsACajA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\s2101009\\source\\repos\\ray_liptest\\ray_liptest\\ray_liptest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\s2101009\\.nuget\\packages\\microsoft.toolkit.highperformance\\7.1.2\\microsoft.toolkit.highperformance.7.1.2.nupkg.sha512",
+    "C:\\Users\\s2101009\\.nuget\\packages\\raylib-cs\\4.2.0.2\\raylib-cs.4.2.0.2.nupkg.sha512",
+    "C:\\Users\\s2101009\\.nuget\\packages\\raylib-cslo\\4.2.0.9\\raylib-cslo.4.2.0.9.nupkg.sha512",
+    "C:\\Users\\s2101009\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
