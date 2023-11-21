@@ -158,11 +158,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s2101009\\Downloads\\spaceinvaideri (1)\\spaceinvaideri\\spaceinvaideri\\spaceinvaideri.csproj",
+      "projectUniqueName": "C:\\Users\\s2101009\\OneDrive - Business College Helsinki\\Toimisto ohjelmistot\\Työpöytä\\spaceinvaideri\\spaceinvaideri\\spaceinvaideri.csproj",
       "projectName": "spaceinvaideri2",
-      "projectPath": "C:\\Users\\s2101009\\Downloads\\spaceinvaideri (1)\\spaceinvaideri\\spaceinvaideri\\spaceinvaideri.csproj",
+      "projectPath": "C:\\Users\\s2101009\\OneDrive - Business College Helsinki\\Toimisto ohjelmistot\\Työpöytä\\spaceinvaideri\\spaceinvaideri\\spaceinvaideri.csproj",
       "packagesPath": "C:\\Users\\s2101009\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s2101009\\Downloads\\spaceinvaideri (1)\\spaceinvaideri\\spaceinvaideri\\obj\\",
+      "outputPath": "C:\\Users\\s2101009\\OneDrive - Business College Helsinki\\Toimisto ohjelmistot\\Työpöytä\\spaceinvaideri\\spaceinvaideri\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\s2101009\\AppData\\Roaming\\NuGet\\NuGet.Config",

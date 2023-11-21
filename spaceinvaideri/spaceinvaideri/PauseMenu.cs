@@ -1,40 +1,31 @@
 ﻿using Raylib_CsLo;
 
-namespace Spaceinvaders
+namespace Spaceinvaideri
 {
     class PauseMenu
     {
         public Font menufont;
-        public bool isPaused = false;
-        private PauseOptions optionsMenu = new PauseOptions();
+        public event EventHandler pOptions;
+        public event EventHandler pBack;
+        public Action RestartGame;
+        public bool RestartButtonPressed { get; set; }
 
-        public PauseMenu(Font menufont)
-        {
-            this.menufont = menufont;
-        }
-
-        public void Draw()
+        public void Draw(double elapsedTime, int destroyedEnemies)
         {
             Raylib.ClearBackground(Raylib.BLACK);
+            Raylib.DrawText("Game Paused", 275, 300, 40, Raylib.WHITE);
+            Raylib.DrawText("Elapsed Time: " + elapsedTime.ToString("0.00") + " seconds", 200, 475, 30, Raylib.WHITE);
+            Raylib.DrawText("Enemies Destroyed: " + destroyedEnemies, 200, 525, 30, Raylib.WHITE);
+            Raylib.DrawText("Press ESC to Resume", 225, 700, 30, Raylib.WHITE);
 
-            if (!isPaused)
+            if (RayGui.GuiButton(new Rectangle(300, 350, 200, 100), "Options"))
             {
-                Raylib.DrawText("Game Paused", 275, 300, 40, Raylib.WHITE);
-                Raylib.DrawText("Press ESC to Resume", 250, 500, 30, Raylib.WHITE);
-
-                if (RayGui.GuiButton(new Rectangle(300, 370, 200, 100), "Options"))
-                {
-                    isPaused = true;
-                }
+                pOptions.Invoke(this, EventArgs.Empty);
             }
-            else
+            if (RayGui.GuiButton(new Rectangle(300, 575, 200, 100), "Restart"))
             {
-                PauseOptions.OptionsState optionsState = optionsMenu.Draw();
-
-                if (optionsState == PauseOptions.OptionsState.BackToPauseMenu)
-                {
-                    isPaused = false;
-                }
+                RestartButtonPressed = true;
+                RestartGame?.Invoke();
             }
         }
 
@@ -42,15 +33,7 @@ namespace Spaceinvaders
         {
             if (Raylib.IsKeyPressed(KeyboardKey.KEY_ESCAPE))
             {
-                if (isPaused)
-                {
-                    isPaused = false;
-                }
-            }
-
-            if (isPaused)
-            {
-                optionsMenu.Update();
+                pBack.Invoke(this, EventArgs.Empty);
             }
         }
     }

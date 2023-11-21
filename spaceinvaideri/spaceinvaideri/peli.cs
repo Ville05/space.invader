@@ -1,4 +1,4 @@
-﻿using Spaceinvaders;
+﻿using Spaceinvaideri;
 
 namespace spaceinvaideri
 {
@@ -6,7 +6,7 @@ namespace spaceinvaideri
     {
         public static void Main()
         {
-            invaders game = new invaders();
+            invaideri game = new invaideri();
             game.GameLoop();
         }
     }

@@ -1,13 +1,7 @@
-﻿
-using Raylib_CsLo;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Raylib_CsLo;
 using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Spaceinvaders
+namespace Spaceinvaideri
 {
     internal class Bullet
     {
@@ -24,9 +18,9 @@ namespace Spaceinvaders
             this.direction = direction;
             this.speed = speed;
             this.radius = radius;
-            
-            this.velocity = direction * speed;
+            this.velocity = direction * speed * 2;
         }
+
         public void Update()
         {
             position += velocity;

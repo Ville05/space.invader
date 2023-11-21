@@ -21,6 +21,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="C:\Users\s2101009\.nuget\packages\raylib-cslo\4.2.0.9\contentFiles\any\netstandard2.1\raylib.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="aanet\Dmg.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
